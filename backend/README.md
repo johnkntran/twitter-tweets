@@ -5,8 +5,8 @@ It is non-trivial to set up the backend API for a Python server with Apache. You
 See a live demo at [http://35.196.237.113/haystax10](http://35.196.237.113/haystax10/) (in progress)
 <p align="left">
   <a href="http://35.196.237.113/haystax10/">
-    <img src="./images/twitter_app1.png" alt="Screenshot of App">
-    <img src="./images/twitter_app2.png" alt="Screenshot of App Registered">
+    <img src="../images/twitter_app1.png" alt="Screenshot of App">
+    <img src="../images/twitter_app2.png" alt="Screenshot of App Registered">
   </a>
 </p>
 
