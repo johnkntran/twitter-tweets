@@ -18,6 +18,8 @@
                     function(response) {
                         let ajaxRes = response.data.result;
                         $scope.tweets = ajaxRes ? response.data.payload: [];
+                        let twitterTimeline = angular.element(document.querySelector('.twitter-timeline'));
+                        twitterTimeline.replaceWith(`<a class="twitter-timeline" data-width="420" data-height="760" data-theme="light" data-link-color="#FAB81E" href="https://twitter.com/${$scope.searchQuery}">Tweets by ${$scope.searchQuery}</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>`);
                     }
                 );
             }
