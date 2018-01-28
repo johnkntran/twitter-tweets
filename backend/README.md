@@ -5,8 +5,8 @@ It is non-trivial to set up the backend API for a Python server with Apache. You
 See a live demo at [12.34.56.78](https://10.11.11.17/)
 <p align="left">
   <a href="https://10.11.11.17/">
-    <img src="./img/twitter_app1.png" alt="Screenshot of App">
-    <img src="./img/twitter_app2.png" alt="Screenshot of App Registered">
+    <img src="./images/twitter_app1.png" alt="Screenshot of App">
+    <img src="./images/twitter_app2.png" alt="Screenshot of App Registered">
   </a>
 </p>
 
@@ -45,4 +45,4 @@ You should see a JSON response that looks like
 ```
 {"result": "True", "traceback": null, "payload": [{...}]}
 ```
-Congratulations, if it all works you should have a running Python API on your server capable of serving many difference API requests.
+Congratulations, if it all works you should have a flexible and powerful Python API on your server. This simple app demonstrate the tip of the iceberg on what can actually be done.
