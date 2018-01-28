@@ -56,7 +56,7 @@ def application(environ, start_response):
         for tweet in tweets[:5]:
             tweet_props = {
                 "text": tweet.text, # Tweet contents
-                "time": tweet.created_at.strftime('%b %-d %Y at %-I:%-M:%-S %p'), # Datetime formatted
+                "time": tweet.created_at.strftime("%b %-d, '%y at %I:%M %p"), # Datetime formatted
                 "num_words": len(tweet.text.split()) # Number of words in content split by whitespace
             }
             payload.append(tweet_props)

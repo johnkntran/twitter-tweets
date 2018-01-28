@@ -21,8 +21,8 @@
     <!-- TEST -->
 
     <span ng-if="searchQuery">{{ searchQuery }}</span>
-    <span ng-if="tweet">{{ tweet.text }} | {{ tweet.num_words }} | {{ tweet.time }}</span>
-
+    <p ng-repeat="tweet in tweets">{{ tweet.text }} | {{ tweet.num_words }} | {{ tweet.time }}</p>
+    
     <!-- /TEST -->
 
     <div class="wrapper">

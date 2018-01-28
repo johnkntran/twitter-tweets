@@ -7,7 +7,7 @@
           .then(function(response) {
               let ajaxRes = response.data.result;
               $scope.tweets = ajaxRes ? response.data.payload: [];
-              $scope.tweet = $scope.tweets[0];
+              // $scope.tweet = $scope.tweets[0];
 
         });
     });
