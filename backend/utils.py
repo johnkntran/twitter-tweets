@@ -39,6 +39,7 @@ class util(object):
 		resp.content_length = len(output)
 		resp.cache_control = 'private, no-cache, no-store'
 		resp.headers['X-Frame-Options'] = 'SAMEORIGIN'
+		resp.headers['Access-Control-Allow-Origin'] = '*'
 		if sess_id:
 			resp.set_cookie(name='session', value=sess_id, expires=None, 
 				secure=config.USE_HTTPS, httponly=True, overwrite=True)
