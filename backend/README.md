@@ -2,9 +2,9 @@
 It is non-trivial to set up the backend API for a Python server with Apache. You probably don't want to do this on your own unless you're committed to launching this product.
 
 ## See the Live Demo
-See a live demo at [12.34.56.78](https://10.11.11.17/)
+See a live demo at [http://35.196.237.113/haystax10](http://35.196.237.113/haystax10/) (in progress)
 <p align="left">
-  <a href="https://10.11.11.17/">
+  <a href="http://35.196.237.113/haystax10/">
     <img src="./images/twitter_app1.png" alt="Screenshot of App">
     <img src="./images/twitter_app2.png" alt="Screenshot of App Registered">
   </a>
@@ -31,7 +31,7 @@ WSGIScriptAlias /api /Library/WebServer/CGI-Executables
 Install all Python dependencies needed for the project. 
 This can be done in a [virtualenv](https://virtualenv.pypa.io/en/stable/) if you don't want to pollute your global namespace.
 ```
-`pip install -r requirements.txt` # Can enable a virtualenv before installing if desired
+pip install -r requirements.txt # Can enable a virtualenv before installing if desired
 ```
 In the `/backend` directory, move the `config.py` file to somewhere in your Python import path, such as `/Library/Python/2.7/site-packages/`.
 Move the `utils.py` and `twitter_search.py` files into the directory where your scripts are served in Apache, typically `/Library/WebServer/CGI-Executables` or `/var/www/wsgi-scripts`.
