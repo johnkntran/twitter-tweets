@@ -46,13 +46,14 @@ def application(environ, start_response):
         twitter_api = tweepy.API(auth)
 
         # Perform a search
-        ## res = twitter_api.search(q='%40twitterapi') # @twitterapi
-        tweets = twitter_api.search(q='from%3A{usernm}%20OR%20%23{usernm}%20OR%20%40{usernm}'
-            .format(usernm=params['username'])) # from:nasa OR #nasa OR @nasa
+        ## tweets = twitter_api.search(q='from%3A{usernm}%20OR%20%23{usernm}%20OR%20%40{usernm}'
+        ##    .format(usernm=params['username'])) # from:nasa OR #nasa OR @nasa
+        tweets = twitter_api.search(q='from%3A{usernm}'.format(
+            usernm=params['username'])) # from:nasa
 
-        # Iterate over first 10 tweets and add information to response payload
+        # Iterate over first 5 tweets and add information to response payload
         payload = []
-        for tweet in tweets[:10]:
+        for tweet in tweets[:5]:
             tweet_props = {
                 "text": tweet.text, # Tweet contents
                 "time": tweet.created_at.strftime('%b %-d %Y at %-I:%-M:%-S %p'), # Datetime formatted
