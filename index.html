@@ -17,119 +17,28 @@
       </div>
       <span class="ui left pointing label">Search for a Twitter <span class="twitter-handle">@username</span></span>
     </div>
-
-    <!-- TEST -->
-
-    <span ng-if="searchQuery">{{ searchQuery }}</span>
-    <p ng-repeat="tweet in tweets">{{ tweet.text }} | {{ tweet.num_words }} | {{ tweet.time }}</p>
-    
-    <!-- /TEST -->
-
     <div class="wrapper">
       <div class="ui link cards card-feed">
-        <div class="card">
+        <span class="blue"><i class="twitter icon"></i>Tweet Feed</span>
+        <div class="card" ng-repeat="tweet in tweets">
           <div class="content">
-            <div class="header">Matt Giampietro</div>
-            <div class="meta">
-              <a>Friends</a>
-            </div>
             <div class="description">
-              Matthew is an interior designer living in New York.
+              {{ tweet.text }}
             </div>
           </div>
-          <div class="extra content">
+          <div class="extra content blue">
             <span class="right floated">
-              Joined in 2013
+              Words: {{ tweet.num_words }}
             </span>
             <span>
               <i class="calendar icon"></i>
-              75 Friends
-            </span>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <div class="header">Molly</div>
-            <div class="meta">
-              <span class="date">Coworker</span>
-            </div>
-            <div class="description">
-              Molly is a personal assistant living in Paris.
-            </div>
-          </div>
-          <div class="extra content">
-            <span class="right floated">
-              Joined in 2011
-            </span>
-            <span>
-              <i class="calendar icon"></i>
-              35 Friends
-            </span>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <div class="header">Elyse</div>
-            <div class="meta">
-              <a>Coworker</a>
-            </div>
-            <div class="description">
-              Elyse is a copywriter working in New York.
-            </div>
-          </div>
-          <div class="extra content">
-            <span class="right floated">
-              Joined in 2014
-            </span>
-            <span>
-              <i class="calendar icon"></i>
-              151 Friends
-            </span>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <div class="header">Matt Giampietro</div>
-            <div class="meta">
-              <a>Friends</a>
-            </div>
-            <div class="description">
-              Matthew is an interior designer living in New York.
-            </div>
-          </div>
-          <div class="extra content">
-            <span class="right floated">
-              Joined in 2013
-            </span>
-            <span>
-              <i class="calendar icon"></i>
-              75 Friends
-            </span>
-          </div>
-        </div>
-        <div class="card">
-          <div class="content">
-            <div class="header">Molly</div>
-            <div class="meta">
-              <span class="date">Coworker</span>
-            </div>
-            <div class="description">
-              Molly is a personal assistant living in Paris.
-            </div>
-          </div>
-          <div class="extra content">
-            <span class="right floated">
-              Joined in 2011
-            </span>
-            <span>
-              <i class="calendar icon"></i>
-              35 Friends
+              {{ tweet.time }}
             </span>
           </div>
         </div>
       </div>
       <div class="ui twitter-feed">
-        <a class="twitter-timeline" data-width="420" data-height="550" data-theme="light" data-link-color="#FAB81E" href="https://twitter.com/interior">Tweets by interior</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
+        <a class="twitter-timeline" data-width="420" data-height="760" data-theme="light" data-link-color="#FAB81E" href="https://twitter.com/interior">Tweets by interior</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </div>
     <div class="ui">

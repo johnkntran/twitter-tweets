@@ -1,11 +1,11 @@
 .input-wrapper {
-    border:   2px solid yellow;
+    /*border:   2px solid yellow;*/
     margin:   10px;
     padding:  10px;
 }
 
 .wrapper {
-    border:   2px solid green;
+    /*border:   2px solid green;*/
     margin:   10px;
     padding:  10px;
     width:    780px;
@@ -13,7 +13,7 @@
 }
 
 .card-feed {
-    border:  1px solid blue;
+    /*border:  1px solid blue;*/
     float:   left;
     margin:  10px;
     padding: 10px;
@@ -21,7 +21,7 @@
 }
 
 .twitter-feed {
-    border:  1px solid red;
+    /*border:  1px solid red;*/
     float:   left;
     margin:  10px;
     padding: 10px;
