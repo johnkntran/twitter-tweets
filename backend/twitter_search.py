@@ -33,6 +33,7 @@ owner_id = "4830201730"
 def application(environ, start_response):
     # Set up initial parameters and utility instances
     request = webob.Request(environ)
+    print('\n{} | {}\n'.format(request.body, type(request.body)))
     params = json.loads(request.body) if request.body else {'username': 'interior'} # Default to USDI
     utl = utils.util(environ, start_response)
 
