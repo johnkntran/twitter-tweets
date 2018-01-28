@@ -33,7 +33,7 @@ owner_id = "4830201730"
 def application(environ, start_response):
     # Set up initial parameters and utility instances
     request = webob.Request(environ)
-    params = json.loads(request.body) if request.body else {'username': 'nasa'} # Default to NASA
+    params = json.loads(request.body) if request.body else {'username': 'interior'} # Default to USDI
     utl = utils.util(environ, start_response)
 
     try:
@@ -49,7 +49,7 @@ def application(environ, start_response):
         ## tweets = twitter_api.search(q='from%3A{usernm}%20OR%20%23{usernm}%20OR%20%40{usernm}'
         ##    .format(usernm=params['username'])) # from:nasa OR #nasa OR @nasa
         tweets = twitter_api.search(q='from%3A{usernm}'.format(
-            usernm=params['username'])) # from:nasa
+            usernm=params['username'])) # from:interior
 
         # Iterate over first 5 tweets and add information to response payload
         payload = []
