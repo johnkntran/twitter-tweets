@@ -4,18 +4,21 @@
     <title>Twitter</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.css">
     <link rel="stylesheet" href="./css/style.css">
-    <script src="https://unpkg.com/jquery@3.2.1/dist/jquery.js"></script>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.7/angular.min.js"></script>
+    <script src="./node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="./node_modules/angular/angular.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
     <script src="./js/app.js"></script>
   </head>
   <body ng-controller="MyController">
     <div class="input-wrapper">
       <div class="ui icon input">
-        <input type="text" placeholder='e.g. "interior"' ng-model="searchQuery" ng-keypress="submitSearch($event)">
+        <input type="text" placeholder='e.g. "interior"' ng-model="searchQuery" 
+        ng-keypress="submitSearch($event)">
         <i class="search icon"></i>
       </div>
-      <span class="ui left pointing label">Search for a Twitter <span class="twitter-handle">@username</span></span>
+      <span class="ui left pointing label">Search for a Twitter 
+        <span class="twitter-handle">@username</span>
+      </span>
     </div>
     <div class="wrapper">
       <div class="ui link cards card-feed">
@@ -43,7 +46,8 @@
     </div>
     <div class="ui">
       <span class="ui label basic green">Made with love by 
-        <a class="twitter-handle" href="https://github.com/johnkntran/haystax10">@johnkntran</a>
+        <a class="twitter-handle" href="https://github.com/johnkntran/haystax10">
+        @johnkntran</a>
       </span>
     </div>
   </body>
