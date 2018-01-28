@@ -4,7 +4,11 @@
 
     haystax.controller('MyController', ($scope, $http) => {
 
-        $http.get('http://127.0.0.1/api/twitter_search.py').then(
+        // Change this API endpoint according to your own backend.
+        // Mine is deployed on a Google Cloud instance, but your endpoint URL will be different.
+        let apiEndpoint = 'http://35.196.237.113/haystax10/api/twitter_search.py';
+
+        $http.get(apiEndpoint).then(
             response => {
                 let ajaxRes = response.data.result;
                 $scope.tweets = ajaxRes ? response.data.payload : [];
@@ -14,7 +18,7 @@
         $scope.submitSearch = keyEvent => {
             if (keyEvent.which === 13) {
                 let payloadData = JSON.stringify({username: $scope.searchQuery});
-                $http.post('http://127.0.0.1/api/twitter_search.py', payloadData).then(
+                $http.post(apiEndpoint, payloadData).then(
                     response => {
                         let ajaxRes = response.data.result;
                         $scope.tweets = ajaxRes ? response.data.payload: [];
