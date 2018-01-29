@@ -2,11 +2,11 @@
 It is non-trivial to set up the backend API for a Python server with Apache. You probably don't want to do this on your own unless you're committed to launching this product.
 
 ## See the Live Demo
-See a live demo at [http://35.196.237.113/haystax10](http://35.196.237.113/haystax10/) (in progress)
+See a live demo at [http://35.227.108.253/twittertweets](http://35.227.108.253/twittertweets/)
 <p align="left">
-  <a href="http://35.196.237.113/haystax10/">
+  <a href="http://35.227.108.253/twittertweets/">
     <img src="../images/twitter_app1.png" alt="Screenshot of App">
-    <img src="../images/twitter_app2.png" alt="Screenshot of App Registered">
+    <img src="../images/twitter_app2.png" alt="Screenshot of App Search">
   </a>
 </p>
 
