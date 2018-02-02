@@ -1,5 +1,6 @@
 # Twitter Tweets
-A simple web app that scrapes the Twitter API and display the most recent tweets for a @Twitter username that is searched.
+<p>A simple web app that scrapes the Twitter API and display the most recent tweets for a @Twitter username that is searched.</p>
+<p>Frontend built with AngularJS and Semantic. Backend built with Python and Tweepy.</p>
 
 ## See the Live Demo
 See a live demo at [http://35.227.108.253/twittertweets](http://35.227.108.253/twittertweets/)
