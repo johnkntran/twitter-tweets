@@ -1,4 +1,4 @@
-# twitter-tweets Backend
+# Twitter Tweets Backend
 It is non-trivial to set up the backend API for a Python server with Apache. But here are the steps if you need them.
 
 ## See the Live Demo
