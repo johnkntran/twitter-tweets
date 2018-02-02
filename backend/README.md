@@ -1,5 +1,5 @@
-# haystax10 Backend
-It is non-trivial to set up the backend API for a Python server with Apache. You probably don't want to do this on your own unless you're committed to launching this product.
+# twitter-tweets Backend
+It is non-trivial to set up the backend API for a Python server with Apache. But here are the steps if you need them.
 
 ## See the Live Demo
 See a live demo at [http://35.227.108.253/twittertweets](http://35.227.108.253/twittertweets/)
