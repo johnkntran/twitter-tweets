@@ -51,9 +51,9 @@ def application(environ, start_response):
         tweets = twitter_api.search(q='from%3A{usernm}'.format(
             usernm=params['username'])) # from:interior
 
-        # Iterate over first 5 tweets and add information to response payload
+        # Iterate over first 6 tweets and add information to response payload
         payload = []
-        for tweet in tweets[:5]:
+        for tweet in tweets[:6]:
             tweet_props = {
                 "text": tweet.text, # Tweet contents
                 "time": tweet.created_at.strftime("%-m/%-d/%y at %I:%M %p"), # Datetime formatted

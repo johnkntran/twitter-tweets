@@ -1,12 +1,13 @@
-# haystax10
-Create a simple web app. Connect to the public Twitter API and display the last 5 public tweets for a username that is entered into and input dialog. Make sure the CSS and HTML is proper and looks decent. The output should show the tweet content, date/time, and a count of how many words are from the English dictionary.
+# Twitter Tweets
+<p>A simple web app that scrapes the Twitter API and display the most recent tweets for a @Twitter username that is searched.</p>
+<p>Frontend built with AngularJS and Semantic. Backend built with Python and Tweepy.</p>
 
 ## See the Live Demo
-See a live demo at [http://35.196.237.113/haystax10](http://35.196.237.113/haystax10/) (in progress)
+See a live demo at [http://35.227.108.253/twittertweets](http://35.227.108.253/twittertweets/)
 <p align="left">
-  <a href="http://35.196.237.113/haystax10/">
+  <a href="http://35.227.108.253/twittertweets/">
     <img src="./images/twitter_app1.png" alt="Screenshot of App">
-    <img src="./images/twitter_app2.png" alt="Screenshot of App Registered">
+    <img src="./images/twitter_app2.png" alt="Screenshot of App Search">
   </a>
 </p>
 
