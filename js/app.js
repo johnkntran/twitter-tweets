@@ -6,7 +6,7 @@
 
         // Change this API endpoint according to your own backend.
         // Mine is deployed on a Google Cloud instance, but your endpoint URL will be different.
-        let apiEndpoint = 'http://35.196.237.113/haystax10/api/twitter_search.py';
+        let apiEndpoint = 'http://35.227.108.253/api/twitter_search.py';
 
         $http.get(apiEndpoint).then(
             response => {
