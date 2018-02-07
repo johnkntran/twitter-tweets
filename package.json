@@ -25,6 +25,7 @@
   "dependencies": {
     "angular": "^1.6.8",
     "angular-route": "^1.6.8",
+    "chart.js": "^2.7.1",
     "jquery": "^3.3.1"
   }
 }

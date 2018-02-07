@@ -6,6 +6,7 @@
     <link rel="stylesheet" href="./css/style.css">
     <script src="./node_modules/jquery/dist/jquery.min.js"></script>
     <script src="./node_modules/angular/angular.min.js"></script>
+    <script src="./node_modules/chart.js/dist/chart.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.2.13/semantic.min.js"></script>
     <script src="./js/app.js"></script>
   </head>
@@ -41,6 +42,9 @@
         </div>
       </div>
       <div class="ui twitter-feed">
+        <div class="ui chart">
+          <canvas id="tweetGraph" width="410" height="300"></canvas>
+        </div>
         <a class="twitter-timeline" data-width="420" data-height="760" data-theme="light" data-link-color="#FAB81E" href="https://twitter.com/interior">Tweets by interior</a> <script async src="https://platform.twitter.com/widgets.js" charset="utf-8"></script>
       </div>
     </div>
