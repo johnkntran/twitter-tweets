@@ -6,7 +6,7 @@
 
         // Change this API endpoint according to your own backend.
         // Mine is deployed on a Google Cloud instance, but your endpoint URL will be different.
-        const apiEndpoint = 'http://35.227.108.253/api/twitter_search.py';
+        const apiEndpoint = 'http://35.196.93.111/api/twitter_search.py';
 
         $http.get(apiEndpoint).then(
             response => {
@@ -85,4 +85,3 @@
         }
     });
 })();
-

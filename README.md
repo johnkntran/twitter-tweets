@@ -3,16 +3,16 @@
 <p>Frontend built with AngularJS and Semantic. Backend built with Python and Tweepy.</p>
 
 ## See the Live Demo
-See a live demo at [http://35.227.108.253/twittertweets](http://35.227.108.253/twittertweets/)
+See a live demo at [http://35.196.93.111/twittertweets](http://35.196.93.111/twittertweets/)
 <p align="left">
-  <a href="http://35.227.108.253/twittertweets/">
+  <a href="http://35.196.93.111/twittertweets/">
     <img src="./images/twitter_app1.png" alt="Screenshot of App">
     <img src="./images/twitter_app2.png" alt="Screenshot of App Search">
   </a>
 </p>
 
 ## Launching the App Locally
-*Please note, you must launch the Python backend API for search functionality to work.* 
+*Please note, you must launch the Python backend API for search functionality to work.*
 *Follow the instructions in the `/backend` folder to set up a backend API.*
 You can run the *frontend* of the application locally by following these steps.
 

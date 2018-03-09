@@ -2,9 +2,9 @@
 It is non-trivial to set up the backend API for a Python server with Apache. But here are the steps if you need them.
 
 ## See the Live Demo
-See a live demo at [http://35.227.108.253/twittertweets](http://35.227.108.253/twittertweets/)
+See a live demo at [http://35.196.93.111/twittertweets](http://35.196.93.111/twittertweets/)
 <p align="left">
-  <a href="http://35.227.108.253/twittertweets/">
+  <a href="http://35.196.93.111/twittertweets/">
     <img src="../images/twitter_app1.png" alt="Screenshot of App">
     <img src="../images/twitter_app2.png" alt="Screenshot of App Search">
   </a>
@@ -28,7 +28,7 @@ Set a `WSGIScriptAlias` to point to `api`. The relevant lines to add in your Apa
 LoadModule wsgi_module /Library/Python/2.7/site-packages/mod_wsgi/server/mod_wsgi-py27.so
 WSGIScriptAlias /api /Library/WebServer/CGI-Executables
 ```
-Install all Python dependencies needed for the project. 
+Install all Python dependencies needed for the project.
 This can be done in a [virtualenv](https://virtualenv.pypa.io/en/stable/) if you don't want to pollute your global namespace.
 ```
 pip install -r requirements.txt # Can enable a virtualenv before installing if desired
@@ -40,7 +40,7 @@ Restart the Apache server by issueing the command below, depending on your OS.
 sudo apachectl restart # For Macs
 sudo systemctl restart httpd.service # For most Linux's
 ```
-Navigate to [http://localhost/api/twitter_search.py](http://localhost/api/twitter_search.py) on your browser. This will issue a GET request to the API. 
+Navigate to [http://localhost/api/twitter_search.py](http://localhost/api/twitter_search.py) on your browser. This will issue a GET request to the API.
 You should see a JSON response that looks like
 ```
 {"result": "True", "traceback": null, "payload": [{...}]}
