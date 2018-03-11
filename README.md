@@ -1,6 +1,6 @@
 # Twitter Tweets
 <p>A simple web app that scrapes the Twitter API and display the most recent tweets for a @Twitter username that is searched.</p>
-<p>Frontend built with AngularJS and Semantic. Backend built with Python and Tweepy.</p>
+<p>Frontend built with **AngularJS** and **Semantic UI**. Backend built with **Python** and **Tweepy**.</p>
 
 ## See the Live Demo
 See a live demo at [http://35.196.93.111/twittertweets](http://35.196.93.111/twittertweets/)
@@ -12,22 +12,23 @@ See a live demo at [http://35.196.93.111/twittertweets](http://35.196.93.111/twi
 </p>
 
 ## Launching the App Locally
-*Please note, you must launch the Python backend API for search functionality to work.*
-*Follow the instructions in the `/backend` folder to set up a backend API.*
-You can run the *frontend* of the application locally by following these steps.
+*Follow the instructions in the [./backend](./backend) folder to set up a backend API.*
+*You will need to launch the Python backend API for the search functionality to work.*
+<br><br>
+The *frontend* portion of the application can be launched by following these steps...
 
 ### Prerequisites
 * [NodeJS](https://nodejs.org/en/download/) - an open source server framework
 * [npm](https://www.npmjs.com/get-npm) - a package manager for Node.js packages
 * [http-server](https://www.npmjs.com/package/http-server) - a simple, zero-configuration command-line HTTP server
-* [Python](https://www.python.org/downloads/) (optional) - for an alternative server
+* [Python](https://www.python.org/downloads/) - for an alternative server (optional)
 
 ### Installing
 Clone this repository onto your local computer
 ```
-git clone -b master https://github.com/johnkntran/haystax10.git haystax10
+git clone -b master https://github.com/johnkntran/twitter-tweets.git twitter-tweets
 ```
-Then `cd haystax10` to go into the repository.
+Then `cd twitter-tweets` to go into the repository.
 Install all package dependencies
 ```
 npm install

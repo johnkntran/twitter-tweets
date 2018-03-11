@@ -1,14 +1,8 @@
 # Twitter Tweets Backend
-It is non-trivial to set up the backend API for a Python server with Apache. But here are the steps if you need them.
+It is takes a bit of effort to set up the backend API for a Python server with Apache, but here are the steps.
 
 ## See the Live Demo
 See a live demo at [http://35.196.93.111/twittertweets](http://35.196.93.111/twittertweets/)
-<p align="left">
-  <a href="http://35.196.93.111/twittertweets/">
-    <img src="../images/twitter_app1.png" alt="Screenshot of App">
-    <img src="../images/twitter_app2.png" alt="Screenshot of App Search">
-  </a>
-</p>
 
 ## Launching the Backend Locally
 You can launch the backend API locally by following these steps.
